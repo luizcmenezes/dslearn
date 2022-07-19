@@ -18,6 +18,10 @@ public class Notification implements Serializable {
     private Boolean read;
     private String route;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
     public Notification() {
     }
 
@@ -67,6 +71,14 @@ public class Notification implements Serializable {
 
     public void setRoute(String route) {
         this.route = route;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
