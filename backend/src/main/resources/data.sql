@@ -17,3 +17,7 @@ INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Bootcamp HTML', 'ht
 
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-07-14T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-07-14T03:00:00Z', 1);
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2020-12-14T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-12-14T03:00:00Z', 1);
+
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://lh3.googleusercontent.com/V0jzA2TyTStNB7NJblgtIqks_6vCKiGMufIPv-m9VT9iIOXYTqpoDhYeXboDUorc29jboCHv3N1CN4JQJm-MkCx-9H4OcrwoBu1HoxEnOb3NAvuOxJTjeW5H-zowXB_uMCzTRf10', 1, 1);
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('FORUM', 'Tire suas dúvidas', 2, 'https://lh3.googleusercontent.com/V0jzA2TyTStNB7NJblgtIqks_6vCKiGMufIPv-m9VT9iIOXYTqpoDhYeXboDUorc29jboCHv3N1CN4JQJm-MkCx-9H4OcrwoBu1HoxEnOb3NAvuOxJTjeW5H-zowXB_uMCzTRf10', 2, 1);
+INSERT INTO tb_resource(title, description, position, img_uri, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', 3, 'https://lh3.googleusercontent.com/V0jzA2TyTStNB7NJblgtIqks_6vCKiGMufIPv-m9VT9iIOXYTqpoDhYeXboDUorc29jboCHv3N1CN4JQJm-MkCx-9H4OcrwoBu1HoxEnOb3NAvuOxJTjeW5H-zowXB_uMCzTRf10', 0, 1);
