@@ -28,13 +28,14 @@ public class Section implements Serializable {
     public Section() {
     }
 
-    public Section(Long id, String title, String description, Integer position, String imgUri, Resource resource) {
+    public Section(Long id, String title, String description, Integer position, String imgUri, Resource resource, Section prerequisite) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.position = position;
         this.imgUri = imgUri;
         this.resource = resource;
+        this.prerequisite = prerequisite;
     }
 
     public Long getId() {
@@ -75,6 +76,14 @@ public class Section implements Serializable {
 
     public void setImgUri(String imgUri) {
         this.imgUri = imgUri;
+    }
+
+    public Section getPrerequisite() {
+        return prerequisite;
+    }
+
+    public void setPrerequisite(Section prerequisite) {
+        this.prerequisite = prerequisite;
     }
 
     public Resource getResource() {
